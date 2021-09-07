@@ -8,5 +8,9 @@ namespace QuiltPatterns
 {
     class Shape
     {
+
+
+
+
     }
 }
