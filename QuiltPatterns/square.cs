@@ -6,19 +6,13 @@ using System.Threading.Tasks;
 
 namespace QuiltPatterns
 {
-    class square
+    class Square : Shape
     {
-        internal double side;
-        internal double width;
-
-        double GetArea()
-        {
-            return side * side;
-        }
-
         public void Display()
         {
-            Console.WriteLine("side: {0}", side);
+            Console.WriteLine("Square");
+            Console.WriteLine("Length: {0}", Length);
+            Console.WriteLine("Color: {0}", Color);
             Console.WriteLine("Area: {0}", GetArea());
         }
     }

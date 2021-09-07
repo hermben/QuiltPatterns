@@ -6,25 +6,41 @@ using System.Threading.Tasks;
 
 namespace QuiltPatterns
 {
-    class triangle
+    class Triangle : Shape
     {
         //member variables
-        internal double a;
-        internal double b;
-        internal double h;
+        public double Heigth { get; set; }
 
-        double GetArea()
+        public double GetArea()
         {
-            return 1 / 2 * (b*h);
+            return 1 / 2 * (Length * Heigth);
+        }
+
+        public void SetShape()
+        {
+            // Get Heigth from user input
+            Console.WriteLine("Enter Heigth : ");
+            Heigth = Convert.ToDouble(Console.ReadLine());
+
+            base.SetShape();
+
+            /*// Get Length from user input
+            Console.WriteLine("Enter Length : ");
+            Length = (double)Console.ReadLine();
+            // Get Color from user input
+            Console.WriteLine("Enter Color : ");
+            Color = Console.ReadLine();*/
         }
 
         public void Display()
         {
-            Console.WriteLine("Length: {0}", a);
-            Console.WriteLine("Width: {0}", b);
-            Console.WriteLine("Width: {0}", h);
+            Console.WriteLine("Triangle");
+            Console.WriteLine("Length: {0}", Length);
+            Console.WriteLine("Heigth: {0}", Heigth);
+            Console.WriteLine("Color: {0}", Color);
             Console.WriteLine("Area: {0}", GetArea());
         }
+
 
 
     }
