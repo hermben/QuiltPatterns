@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "QuiltPatterns": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

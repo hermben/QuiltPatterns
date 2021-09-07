@@ -28,6 +28,7 @@ namespace QuiltPatterns
             Color = Console.ReadLine();
         }
 
+        
         public void Display()
         {
             Console.WriteLine("Shape");

@@ -11,34 +11,27 @@ namespace QuiltPatterns
         //member variables
         public double Heigth { get; set; }
 
-        public double GetArea()
+        public new double GetArea()
         {
-            return 1 / 2 * (Length * Heigth);
+            return (this.Length * this.Heigth) / 2;
         }
 
-        public void SetShape()
+        public new void SetShape()
         {
             // Get Heigth from user input
             Console.WriteLine("Enter Heigth : ");
             Heigth = Convert.ToDouble(Console.ReadLine());
 
             base.SetShape();
-
-            /*// Get Length from user input
-            Console.WriteLine("Enter Length : ");
-            Length = (double)Console.ReadLine();
-            // Get Color from user input
-            Console.WriteLine("Enter Color : ");
-            Color = Console.ReadLine();*/
         }
 
-        public void Display()
+        public new void Display()
         {
             Console.WriteLine("Triangle");
             Console.WriteLine("Length: {0}", Length);
             Console.WriteLine("Heigth: {0}", Heigth);
             Console.WriteLine("Color: {0}", Color);
-            Console.WriteLine("Area: {0}", GetArea());
+            Console.WriteLine("Area: {0}", this.GetArea());
         }
 
 
