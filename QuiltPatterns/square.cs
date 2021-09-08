@@ -8,7 +8,7 @@ namespace QuiltPatterns
 {
     class Square : Shape
     {
-        public new void Display()
+        public override void Display()
         {
             Console.WriteLine("Square");
             Console.WriteLine("Length: {0}", Length);

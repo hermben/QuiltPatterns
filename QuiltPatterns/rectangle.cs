@@ -25,7 +25,7 @@ namespace QuiltPatterns
             base.SetShape();
         }
 
-        public new void Display()
+        public override void Display()
         {
             Console.WriteLine("Rectangle");
             Console.WriteLine("Length: {0}", Length);

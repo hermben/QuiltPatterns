@@ -29,7 +29,7 @@ namespace QuiltPatterns
         }
 
         
-        public void Display()
+        public virtual void Display()
         {
             Console.WriteLine("Shape");
             Console.WriteLine("Length: {0}", Length);

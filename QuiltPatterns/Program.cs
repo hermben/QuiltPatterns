@@ -55,7 +55,8 @@ namespace QuiltPatterns
             // Display shapes
             foreach (var shape in shapes)
             {
-                if (shape is Square)
+                shape.Display();
+                /*if (shape is Square)
                 {
                     Square square = (Square)shape;
                     square.Display();
@@ -67,7 +68,7 @@ namespace QuiltPatterns
                 {
                     Triangle triangle = (Triangle)shape;
                     triangle.Display();
-                }
+                }*/
                 Console.WriteLine();
             }
 
